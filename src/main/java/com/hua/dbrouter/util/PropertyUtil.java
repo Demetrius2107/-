@@ -1,6 +1,7 @@
 package com.hua.dbrouter.util;
 
-import org.apache.ibatis.mapping.Environment;
+
+import org.springframework.core.env.Environment;
 import org.springframework.core.env.PropertyResolver;
 
 import java.lang.reflect.Constructor;

@@ -1,6 +1,5 @@
 package com.hua.dbrouter;
 
-import com.hua.dbrouter.annotation.DBRouterStrategy;
 import com.hua.dbrouter.strategy.IDBRouterStrategy;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.lang.StringUtils;
@@ -21,7 +20,7 @@ public class DBRouterJoinPoint {
 
     private IDBRouterStrategy dbRouterStrategy;
 
-    public DBRouterJoinPoint(DBRouterConfig dbRouterConfig, DBRouterStrategy dbRouterStrategy){
+    public DBRouterJoinPoint(DBRouterConfig dbRouterConfig, IDBRouterStrategy dbRouterStrategy){
         this.dbRouterConfig = dbRouterConfig;
         this.dbRouterStrategy = (IDBRouterStrategy) dbRouterStrategy;
     }
